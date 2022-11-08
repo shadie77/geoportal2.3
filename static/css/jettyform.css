@@ -1,0 +1,209 @@
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+  }
+
+.row {
+    height: 1000px;
+}
+
+.col-md-12 {
+    height: 100%;
+}
+  
+.formContainer {
+    max-width: 60%;
+    width: 60%;
+    margin: 5px auto;
+    padding: 10px 20px;
+    border-style: 1px solid blue;
+    border-radius: 8px;
+    height: 150%;
+  }
+
+.labelcontainer {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.item1 {
+    flex: 0.5;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+.itemlon {
+    flex: 1.2;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+.item2 {
+    flex: 3;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.coordinateDiv {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.latlonDiv {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+input[type=number] {
+    width: 87%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0px;;
+    border-style: 1px solid;
+    border-color: #0062b3;
+    border-radius: 5px;
+}
+
+input[type=text] {
+      width: 95%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-style: 1px solid;
+      border-color: #0062b3;
+      border-radius: 5px;
+  }
+
+.field_set {
+    border-color: #0062b3;
+    border-style: solid;
+    border-radius: 20px;
+  }
+  
+input[type="radio"] {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  }
+
+input[type=submit] {
+    width: 80%;
+    margin: auto;
+  }
+  
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #3672B1;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 8px;
+    width: 70%;
+    border: 1px solid #3672B1;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+    position: absolute;
+  }
+  
+fieldset {
+    margin-bottom: 30px;
+    height: auto;
+    width: 90%;
+  }
+  
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+label {
+    width: 100%;
+  }
+  
+label.light {
+    font-weight: 300;
+    display: inline;
+  }
+
+.assessmentDiv {
+    display: flex;
+    height: 1000px;
+    border: 1px solid red;
+    border-radius: 20px;
+    
+}
+
+.needsAssement1 {
+    width: 43%;
+    border-color: blue;
+    border-style: solid;
+    border-radius: 20px;
+    height: 460px;
+    display: inline;
+}
+
+.form-check-inline {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.form-check-inline li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 10%;
+    width: auto;
+    margin-right: 0.5%;
+    padding-left: 0;
+    margin-left: 0;
+    margin: 1em 0;
+}
+
+.assessmentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.facilities {
+    flex: 2;
+}
+
+.radioButtons {
+    flex: 5;
+}
+  
+@media screen and (min-width: 480px) {
+  
+    form {
+      max-width: 1500px;
+    }
+  
+  }

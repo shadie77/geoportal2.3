@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASWA Geoportal</title>
+    <link rel="stylesheet" type= "text/css" href="{% static 'css/landingstyle.css' %}">
+    <link rel="icon" href="https://svgshare.com/i/hrX.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+    <div class="banner1 slide1 slider">
+        <img src="{% static 'images/slider/272A6387.png' %}" alt="">
+        <div class="text-box zoom1">
+           
+          <h1>Featured Terminals</h1>
+
+        </div>
+    </div>
+    <div class="banner2 slide2 slider">
+        <img src="{% static 'images/slider/Bathy.jpeg' %}" alt="">
+      
+        <div class="text-box zoom2">
+          <h1>Bathymetry Survey</h1>
+        </div>
+    </div>
+    <div class="banner3 slide3 slider">
+        <img src="{% static 'images/slider/DJI_0143.jpg' %}" alt="">
+     
+        <div class="text-box zoom3">
+          <h1>Drone Mapping</h1>
+        </div>
+    </div>
+    <div class="banner4 slide4 slider">
+        <img src="{% static 'images/slider/Route Analysis.jpeg' %}" alt="">
+        
+        <div class="text-box zoom4">
+            <h1>Route Analysis</h1>
+        </div>
+    </div>
+    <div class="banner5 slide5 slider">
+        <img src="{% static 'images/slider/DJI_0132.jpg' %}" alt="">
+       
+        <div class="text-box zoom5">
+            <h1>Jetty Needs Assessment</h1>
+        </div>
+    </div>
+    <div class="banner6 slide6 slider">
+        <img src="{% static 'images/slider/MDL_7415.jpg' %}" alt="">
+       
+        <div class="text-box zoom6">
+            <h1>Infrastructure Assessment</h1>
+        </div>
+    </div>
+        <div class="content">
+            <h1>Welcome to LASWA Geoportal</h1>
+            <h1>Welcome to LASWA Geoportal</h1>
+            <div>
+                <a href="{% url 'login' %}"><button class="bannerButton" type="button"><span></span>LOGIN</button></a>
+                <a href="{% url 'register' %}"><button class="bannerButton" type="button"><span></span>SIGNUP</button></a>
+            </div>
+        </div>
+        <footer>
+          <span>Powered By OEA Consults</span>
+        </footer>
+    
+</body>
+</html>

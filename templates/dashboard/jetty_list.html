@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'dashboard/base2.html' %}
+{% load static %}
+{% block additionalStyles %}
+<link rel="stylesheet" type= "text/css" href="{% static 'css/jettylist.css' %}">
+{% endblock %}
+{% block body_block %}
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="termContent">
+                <div class="laswa">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="termNames">
+                    {% for eachTerminal in jetty_list %}
+                    <a href="{% url 'jetty_page' pk=14 %}">
+                        <div class="badoreterm" href = "{}" >
+                            {% if eachTerminal.picture %}
+                            <img src="{{ eachTerminal.picture.url }}" alt="">
+                            {% else %}
+                            <img src="{% static 'images/boat.jpg' %}" alt="">
+                            {% endif %}
+                            <h4>{{ eachTerminal.name }}</h4>
+                        </div>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+    </div>
+{% endblock %}

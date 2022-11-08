@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+{% extends 'dashboard/base2.html' %}
+{% load static %}
+{% block title %}Add Jetty{% endblock %} 
+{% block additionalStyles %}
+<link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" href="{% static 'css/jettyform.css' %}"/>
+<link rel="stylesheet" href="{% static 'css/addpassenger.css' %}"/>
+{% endblock %}
+{% block body_block %}
+<div class="centerDiv">
+    <header>
+        <div id="logo"><img src="{% static 'images/laswa.png' %}" alt="Laswa Logo"></div>
+        <h3>LAGOS STATE WATERWAYS AUTHORITY</h3>
+    </header>
+    <form class="uploadPassenger">
+        <h4>CREATE NEW JETTY</h4>
+        <fieldset class="field_set">
+          
+            <legend>Jetty Details</legend>
+            <div class="labelcontainer">
+                <div class="item1">
+                    Jetty Name<span style="color: red; font-weight:bold"> *</span>
+                </div>
+                <div class="item2">
+                    {{ jetty_form.name }}
+                </div>
+           </div> 
+            <div class="labelcontainer">
+                <div class="item1">
+                   <label>Jetty Type<span style="color: red; font-weight:bold"> *</span></label>
+                </div>
+               <div class="item2">
+                   {{ jetty_form.terminal }}
+               </div> 
+            </div>
+            <div class="labelcontainer">
+                <div class="item1">
+                   Landing Type<span style="color: red; font-weight:bold"> *</span>
+                </div>
+                <div class="item2">
+                    {{ jetty_form.type }}
+                </div> 
+            </div>
+            <div class="coordinateDiv">
+                <div class="latlonDiv">
+                    <div class="itemlon">
+                       Longitude<span style="color: red; font-weight:bold"> *</span>
+                    </div>
+                    <div class="item2">
+                       <input type="number" id="coordinate" name="latitude" placeholder="Enter latitude">
+                    </div>
+                </div>
+                <div class="latlonDiv">
+                    <div class="itemlon">
+                       Latitude<span style="color: red; font-weight:bold"> *</span>
+                    </div>
+                    <div class="item2">
+                       <input type="number" id="coordinate" name="latitude" placeholder="Enter latitude">
+                    </div>
+                </div>
+           </div>
+           <div class="coordinateDiv">
+               <div class="latlonDiv">
+                   <div class="itemlon">
+                       <label for="picture"><strong>Upload picture</strong><span style="color: red; font-weight:bold"> *</span></label>
+                   </div>
+                   <div class="item2">
+                       <input type="file" accept="image/png, image/jpeg" or accept=".png, .jpg, .jpeg" multiple>
+                   </div>
+               </div>
+               <div class="latlonDiv">
+                   <div class="itemlon">
+                       <label for="bathy"><strong>Bathymetry</strong><span style="color: red; font-weight:bold"> *</span></label>
+                   </div>
+                   <div class="item2">
+                       <input type="file" accept=".csv" name="" id="">
+                   </div>
+               </div>
+          </div>
+       </fieldset>
+       <div style="height: 500px;">
+        <fieldset class="needsAssement1">
+            <legend>Needs Assessment (Facilities)</legend>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Restaurants
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.restaurants }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Access Roads
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.roads }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Parking Space
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.parking }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Building
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.building }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Waiting Room
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.waitingRoom }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Ticketing Area
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.ticketArea }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Restrooms
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.restrooms }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Disability Ramp
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.disabilityRamp }}
+                </div>
+            </div>
+            
+        </fieldset>
+        <fieldset class="needsAssement1">
+            <legend>Needs Assessment (Security)</legend>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Fender
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.fender }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Anchor
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.anchor }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Buoys
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.buoys }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Life Jackets
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.lifeJackets }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Security
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.security }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Fire Station
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.fireStation }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Guard Rails
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.guardRails }}
+                </div>
+            </div>
+            <div class="assessmentContainer">
+                <div class="facilities">
+                    Dock
+                </div>
+                <div class="radioButtons">
+                    {{ jetty_form.landingDock }}
+                </div>
+            </div>
+            
+        </fieldset> 
+       </div>
+        <input type="submit">
+
+        
+    </form>
+    <table class="showCSV"></table>
+
+</div>
+    {% endblock %}
