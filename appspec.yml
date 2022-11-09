@@ -1,1 +1,14 @@
-
+version: 0.0
+os: windows
+files:
+ - source: .
+   destination: C:\Users\Administrator\Downloads\geoportal2.3
+hooks:
+  AfterInstall:
+   - location: scripts/install_app_dependencies
+     timeout: 300
+     runas: root
+  ApplicationStart:
+   - location: scripts/start_server
+     timeout: 300
+     runas: root
