@@ -1,1 +1,3 @@
-
+cd C:\Users\Administrator\Downloads\geoportal2.3
+ .\githubactionsenv\Scripts\activate
+python manage.py runserver
