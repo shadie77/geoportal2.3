@@ -2,7 +2,7 @@ version: 0.0
 os: windows
 files:
  - source: .
-   destination: C:\Users\Administrator\Documents\code-deploy-geoportal
+   destination: C:\Users\Administrator\Documents\code-deploy
 hooks:
   AfterInstall:
    - location: scripts/install_app_dependencies.bat
