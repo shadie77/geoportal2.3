@@ -5,8 +5,8 @@ files:
    destination: C:\Users\Administrator\Documents\code-deploy-geoportal
 hooks:
   AfterInstall:
-   - location: scripts/install_app_dependencies
+   - location: scripts/install_app_dependencies.bat
      timeout: 3600
   ApplicationStart:
-   - location: scripts/start_server
+   - location: scripts/start_server.bat
      timeout: 3600
