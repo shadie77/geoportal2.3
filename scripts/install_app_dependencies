@@ -1,5 +1,5 @@
 py -m pip install --user virtualenv
-py -m venv githubactionsenv
-cd C:\Users\Administrator\Downloads\geoportal2.3
- .\githubactionsenv\Scripts\activate
+cd C:\Users\Administrator\Documents\code-deploy-geoportal
+py -m venv githubactionsenv2
+ .\githubactionsenv2\Scripts\activate
 pip install -r requirements.txt
