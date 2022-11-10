@@ -1,3 +1,3 @@
 .\githubactionsenv\Scripts\activate
-cd C:\Users\Administrator\Downloads\geoportal2.3
+cd C:\Users\Administrator\Documents\code-deploy-geoportal\geoportal2.3
 python manage.py runserver 0.0.0.0:80
