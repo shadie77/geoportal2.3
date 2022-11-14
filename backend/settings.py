@@ -38,7 +38,7 @@ SECRET_KEY = 'django-insecure-@%cky6n@35dt@z&@+wuly4f3qtx01)0gm2h&n9^4zbzov7o$!w
 DEBUG = True
 #DEBUG = env("DEBUG")
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 #ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(" ")
 
 
